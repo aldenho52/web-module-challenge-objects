@@ -163,7 +163,7 @@ and should return an array of objects.
     let listOfLongestReviews = []
     for (i = 0; i < array.length; i++) {
       if ((array[i].feedback.split(" ").length) > 15) {
-        listOfLongestReviews.push(array[i])
+        listOfLongestReviews.push(array[i]) 
       }
     }
     return listOfLongestReviews
@@ -188,14 +188,14 @@ The returned object should have the following characteristics:
          (2) returns the updated value of the `odometer`.
 */
 
-
 function carMarker (odometer) {
-  const car = {
-    odoReading: odometer,
+  return {
+    odometerReading: odometer,
     drive: function (distance) {
-      this.odoReading = odometer + distance
+      this.odometerReading = this.odometerReading + distance
+      return this.odometerReading
     }
-  }  
-  return car
+  }
 }
 
+console.log(carMarker(10000))
