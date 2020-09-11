@@ -73,7 +73,7 @@ const reviews = [
 
 /* Task 3: Console.log just Julius' feedback */
 
-console.log(reviews[5])
+console.log(reviews[5]) 
 
 /* Task 4: Add a new rating with your (fictitious) opinions of the restaurant in the same format as the reviews above. */
 
@@ -199,4 +199,3 @@ function carMarker (odometer) {
   return car
 }
 
-console.log(carMarker(10000))
